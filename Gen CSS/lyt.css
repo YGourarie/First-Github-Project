@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    border: 3px solid lightgray;
+    width: 100%;
+    padding: 24px;
+    
+}
+
+.row {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.box {
+    border: 2px solid lightgray;
+    margin-bottom: 24px;
+}
+
+.box-wrapper{
+    width: 45%;
+}
+
+
+.box-small{
+    height: 50px;
+}
+
+.tiny-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-tiny{
+    width: 30%;
+    height: 50px;
+}
+
+.box-large{
+    width: 45%;
+}
