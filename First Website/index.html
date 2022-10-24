@@ -10,7 +10,7 @@
   <body>
     <section>
       <nav>
-        <img src="/HTML Practise Assets/FES.svg" alt="" />
+        <img src="/HTML Practise Assets/FES.svg" class="logo" alt="" />
         <ul>
           <li><a href="#about">about</a></li>
           <li><a href="#discord">discord</a></li>
@@ -18,48 +18,62 @@
         </ul>
       </nav>
       <header>
-        <div>
-          <h1>This is the h1</h1>
-          <p>This is only the p</p>
-          <button>start now</button>
+        <div class="row">
+          <div>
+            <h1>This is the h1</h1>
+            <p class="subheader">This is only the p</p>
+            <button>start now</button>
+          </div>
+          <figure>
+            <img src="/HTML Practise Assets/laptop.png" alt="" />
+          </figure>
         </div>
-        <figure>
-          <img src="/HTML Practise Assets/laptop.png" alt="" />
-        </figure>
       </header>
     </section>
     <main>
       <section id="about">
         <h2>About</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-          blanditiis ratione. Possimus, explicabo, eligendi asperiores impedit
-          ratione doloribus provident veniam totam voluptates deserunt illo id
-          ullam quidem eaque non quo.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-          blanditiis ratione. Possimus, explicabo, eligendi asperiores impedit
-          ratione doloribus provident veniam totam voluptates deserunt illo id
-          ullam quidem eaque non quo.
-        </p>
-        <figure>
-          <img src="/HTML Practise Assets/about.jpg" alt="" />
-        </figure>
+        <div class="row">
+          <div class="section__description">
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+                blanditiis ratione. Possimus, explicabo, eligendi asperiores
+                impedit ratione doloribus provident veniam totam voluptates
+                deserunt illo id ullam quidem eaque non quo.
+              </p>
+              <p class="section__description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+                blanditiis ratione. Possimus, explicabo, eligendi asperiores
+                impedit ratione doloribus provident veniam totam voluptates
+                deserunt illo id ullam quidem eaque non quo.
+              </p>
+            </div>
+            <figure class="about__img--wrapper">
+              <img src="/HTML Practise Assets/about.jpg" alt="" />
+            </figure>
+          </div>
+        </div>
       </section>
       <section id="discord">
         <h2>Discord</h2>
-        <figure>
-          <img src="/HTML Practise Assets/discord.png" alt="" />
-        </figure>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
-          assumenda necessitatibus animi quos! Esse ratione quasi id quas alias
-          qui. Esse, nam perferendis! Nam quasi doloremque minima quo commodi
-          facilis, maiores harum porro adipisci non. Temporibus mollitia, omnis
-          cupiditate nulla quas nihil, voluptate quibusdam nemo quam quia
-          nesciunt ut voluptas!
-        </p>
+        <div class="row">
+          <div class="section__description">
+            <figure class="about__img--wrapper">
+              <img src="/HTML Practise Assets/discord.png" alt="" />
+            </figure>
+            <div class="section__description--wrapper">
+              <p class="section__description--para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+                assumenda necessitatibus animi quos! Esse ratione quasi id quas
+                alias qui. Esse, nam perferendis! Nam quasi doloremque minima
+                quo commodi facilis, maiores harum porro adipisci non.
+                Temporibus mollitia, omnis cupiditate nulla quas nihil,
+                voluptate quibusdam nemo quam quia nesciunt ut voluptas!
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="contact">
         <h2>Contact</h2>
@@ -67,17 +81,20 @@
           <span>Email</span>
           <input type="email" placeholder="example@gmail.com" />
           <span>Message</span>
-          <input type="text" placeholder="example text" />
-          <button>Submit</button>
+          <textarea type="text" placeholder="example text"></textarea>
+          <button>Contact Us!</button>
         </form>
       </section>
     </main>
     <footer>
-      <img src="/HTML Practise Assets/FES.svg" alt="" />
-      <a href="#about">about</a>
-      <a href="#discord">discord</a>
-      <a href="#contact">contact</a>
-      <a href="">courses</a>
+      <img class="footer__logo" src="/HTML Practise Assets/FES.svg" alt="" />
+      <div class="footer__links">
+        <a class="footer__link" href="#about">about</a>
+        <a class="footer__link" href="#discord">discord</a>
+        <a class="footer__link" href="#contact">contact</a>
+        <a class="footer__link" href="">courses</a>
+      </div>
+      <p>Copyright Frontend Simplified</p>
     </footer>
   </body>
 </html>
